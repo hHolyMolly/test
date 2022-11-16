@@ -1,0 +1,117 @@
+//< " БЛОК С ПРОДУКТАМИ " >=============================================================================================================>//
+.products {
+
+	// .products__body
+
+	&__body {}
+
+	// .products__header
+
+	&__header {
+		gap: 15px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		&:not(:last-child) {
+			@include adaptiv-value("margin-bottom", 30, 20, 1);
+		}
+
+		@media (max-width: 768.2px) {
+			flex-direction: column-reverse;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+
+	// .products__column
+
+	&__column {
+		@include adaptiv-value("gap", 40, 15, 1);
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		@media (max-width: 768.2px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media (max-width: 552.2px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: 325.2px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+.products-header {
+
+	// .products-header__title
+
+	&__title {
+		overflow-wrap: anywhere;
+		@include adaptiv-value("font-size", 32, 22, 1);
+		font-weight: 700;
+		line-height: 39 / 32 * 100%;
+	}
+
+	// .products-header__search
+
+	&__search {
+		padding-right: 5px;
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("border-radius", 10, 6, 1);
+		border: 1px solid #F3F3F3;
+
+		@media (min-width: 768.2px) {
+			max-width: 250px;
+			min-width: 250px;
+		}
+
+		@media (max-width: 768.2px) {
+			width: 100%;
+		}
+	}
+}
+
+.products-search {
+
+	// .products-search__label
+
+	&__label {
+		flex-shrink: 0;
+		flex-grow: 0;
+		@include adaptiv-value("flex-basis", 45, 40, 1);
+		@include adaptiv-value("min-height", 45, 40, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .products-search__input
+
+	&__input {
+		padding-right: 15px;
+		width: 100%;
+		@include adaptiv-value("min-height", 45, 40, 1);
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17 / 14 * 100%;
+		color: $colorDark;
+
+		&::placeholder {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17 / 14 * 100%;
+			color: #C4C4C4;
+		}
+	}
+
+	// .products-search__clear
+
+	&__clear {}
+}

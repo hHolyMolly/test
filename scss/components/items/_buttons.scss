@@ -1,0 +1,174 @@
+//< " ФАЙЛ СТИЛЕЙ КНОПОК " >=============================================================================================================>//
+
+// .button
+.button {
+	@include adaptiv-value("padding-right", 65, 35, 1);
+	@include adaptiv-value("padding-left", 65, 35, 1);
+	@include adaptiv-value("min-height", 55, 45, 1);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	@include adaptiv-value("border-radius", 18, 14, 1);
+	background-color: $colorGreen;
+
+	@media (any-hover: hover) {
+		transition: background-color .3s ease .0s;
+
+		&:hover {
+			background-color: darken($colorGreen, 10%);
+
+			// .button__icon_left
+
+			.button__icon_left {
+				transform: translateX(5px) rotate(180deg);
+			}
+
+			// .button__icon_right
+
+			.button__icon_right {
+				transform: translateX(-5px);
+			}
+		}
+
+		&:active {
+			transform: scale(0.99);
+		}
+	}
+
+	// .button__text
+
+	&__text {
+		@include adaptiv-value("font-size", 16, 14, 1);
+		font-weight: 600;
+		line-height: 19 / 16 * 100%;
+		letter-spacing: 0em;
+		text-align: center;
+		color: $colorWhite;
+	}
+
+	// .button__icon
+
+	&__icon {
+		position: absolute;
+
+		@media (any-hover: hover) {
+			transition: transform .3s ease .0s;
+		}
+
+		// .button__icon_left
+
+		&_left {
+			left: 20px;
+			transform: rotate(180deg);
+		}
+
+		// .button__icon_right
+
+		&_right {
+			right: 20px;
+		}
+	}
+}
+
+// ._burger
+._burger {
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: transparent;
+
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				background-color: #383838;
+
+				&:before,
+				&:after {
+					content: "";
+					background-color: #383838;
+				}
+			}
+		}
+	}
+
+	span {
+		width: 25px;
+		height: 2px;
+		position: relative;
+		transition: background-color 0.2s ease-in-out 0s;
+		background-color: $colorDark;
+
+		&:before,
+		&:after {
+			content: "";
+			width: 25px;
+			height: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			transition: background-color 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+			background-color: $colorDark;
+		}
+
+		&:before {
+			top: -8px;
+		}
+
+		&:after {
+			top: 8px;
+		}
+	}
+
+	// ._active
+
+	&._active {
+		span {
+			background-color: transparent;
+
+			&:before {
+				transform: rotate(45deg) translate(5px, 6px);
+			}
+
+			&:after {
+				transform: rotate(-45deg) translate(5px, -6px);
+			}
+		}
+	}
+}
+
+// ._close
+._close {
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: transparent;
+
+	&:before,
+	&:after {
+		content: "";
+		width: 13px;
+		height: 2px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		border: 4px;
+		background-color: #B5B5B5;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+}
