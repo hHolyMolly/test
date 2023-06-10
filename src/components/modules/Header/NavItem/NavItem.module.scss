@@ -1,0 +1,10 @@
+.navItem {
+  display: flex;
+  align-items: center;
+
+  i {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

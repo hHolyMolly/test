@@ -1,0 +1,33 @@
+.productImage {
+  height: 70px;
+  display: block;
+  flex: 0 0 70px;
+  position: relative;
+
+  text-align: center;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    vertical-align: middle;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.productTitle {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

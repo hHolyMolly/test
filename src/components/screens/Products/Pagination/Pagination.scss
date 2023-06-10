@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      background-color: grey;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &.selected {
+      a {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}
