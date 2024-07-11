@@ -2,11 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>$CrabsTab</title>
+
+    <meta name="robots" content="noindex,nofollow" />
+
+    <style>
+      .page-preloader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 60;
+        background-color: #241e0c;
+      }
+
+      img {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .page-preloader .page-preloader-effect {
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        opacity: 0.23;
+        filter: blur(100px);
+        background-color: #fec714;
+      }
+    </style>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script>
+      if (window.Telegram.WebApp) {
+        const webApp = window.Telegram.WebApp;
+
+        webApp.expand();
+        webApp.ready();
+      }
+    </script>
+  <link rel="icon" href="favicon.ico"><script defer src="main.bbcab9f01709a90852e8.js"></script></head>
 
   <body>
-    test
+    <div id="root" style="height: 100%"></div>
   </body>
 </html>
