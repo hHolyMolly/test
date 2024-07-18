@@ -512,6 +512,7 @@
     left: 0;
   }
   .header-main-menu .header-main__time {
+    display: block !important;
     text-align: left;
   }
 }
