@@ -14,7 +14,7 @@ if (headerScroll && headerMain && headerTopAuth) {
       if (window.innerWidth > 991.98) {
         headerMainTime.style.display = 'block';
 
-        const headerMainAuth = headerMain.querySelector('.header-main__right .header-auth');
+        const headerMainAuth = headerMain.querySelector('.header-main__right .header-auth_scroll');
         if (headerMainAuth) {
           headerMainAuth.remove();
         }
@@ -25,7 +25,9 @@ if (headerScroll && headerMain && headerTopAuth) {
         headerMainTime.style.display = 'none';
 
         if (headerRight) {
-          headerRight.appendChild(headerTopAuth.cloneNode(true));
+          const copiedBlock = headerTopAuth.cloneNode(true);
+          copiedBlock.classList.add('header-auth_scroll');
+          headerRight.appendChild(copiedBlock);
         }
       }
     }

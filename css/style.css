@@ -96,8 +96,17 @@ body._lock-scroll {
 }
 
 .page {
+  /* Если меньше контейнера */
   padding-bottom: 50px;
   flex: 1 1 auto;
+}
+.page {
+  padding-top: 45px;
+}
+@media (max-width: 1320px) {
+  .page {
+    padding-top: calc(30px + 15 * (100vw - 320px) / (1320 - 320));
+  }
 }
 
 .leave-feedback:not(:last-child) {
@@ -243,11 +252,11 @@ body._lock-scroll {
   /* Если меньше контейнера */
 }
 .cooperate-with-best:not(:last-child) {
-  margin-bottom: 94px;
+  margin-bottom: 95px;
 }
 @media (max-width: 1320px) {
   .cooperate-with-best:not(:last-child) {
-    margin-bottom: calc(60px + 34 * (100vw - 320px) / (1320 - 320));
+    margin-bottom: calc(60px + 35 * (100vw - 320px) / (1320 - 320));
   }
 }
 .cooperate-with-best__title {
@@ -305,6 +314,140 @@ body._lock-scroll {
   .cooperate-with-best__label img {
     max-width: 70%;
   }
+}
+
+.about-us-counters:not(:last-child) {
+  /* Если меньше контейнера */
+}
+.about-us-counters:not(:last-child) {
+  margin-bottom: 95px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters:not(:last-child) {
+    margin-bottom: calc(60px + 35 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters__items {
+  /* Если меньше контейнера */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.about-us-counters__items {
+  gap: 28px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters__items {
+    gap: calc(15px + 13 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .about-us-counters__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 479.98px) {
+  .about-us-counters__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.about-us-counters-card {
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  display: flex;
+  align-items: flex-start;
+  /* Если меньше контейнера */
+  background-color: var(--white);
+}
+.about-us-counters-card {
+  padding-top: 40px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card {
+    padding-top: calc(25px + 15 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card {
+  padding-right: 25px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card {
+    padding-right: calc(15px + 10 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card {
+  padding-left: 25px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card {
+    padding-left: calc(15px + 10 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card {
+  padding-bottom: 40px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card {
+    padding-bottom: calc(25px + 15 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card {
+  border-radius: 24px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card {
+    border-radius: calc(18px + 6 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card__image {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.about-us-counters-card__image:not(:last-child) {
+  /* Если меньше контейнера */
+}
+.about-us-counters-card__image:not(:last-child) {
+  margin-right: 16px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card__image:not(:last-child) {
+    margin-right: calc(12px + 4 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card__row {
+  display: flex;
+  flex-direction: column;
+}
+.about-us-counters-card__title {
+  overflow-wrap: anywhere;
+  /* Если меньше контейнера */
+  font-weight: 600;
+  line-height: 142.8571428571%;
+  letter-spacing: -0.31px;
+  text-align: left;
+  color: var(--black-900);
+}
+.about-us-counters-card__title {
+  font-size: 28px;
+}
+@media (max-width: 1320px) {
+  .about-us-counters-card__title {
+    font-size: calc(20px + 8 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.about-us-counters-card__title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.about-us-counters-card__value {
+  overflow-wrap: anywhere;
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 139.1304347826%;
+  text-align: left;
+  color: #8691af;
 }
 
 .comments-feedback-clients {
