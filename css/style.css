@@ -166,6 +166,7 @@ body._lock-scroll {
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
+  overflow-wrap: anywhere;
   font-family: "Rubik", sans-serif;
   color: var(--black-700);
   /* Если меньше контейнера */
