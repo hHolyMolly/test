@@ -57,6 +57,11 @@
 .footer-main__left:not(:last-child) {
   margin-right: 30px;
 }
+@media (min-width: 991.98px) {
+  .footer-main__left {
+    max-width: 500px;
+  }
+}
 @media (max-width: 991.98px) {
   .footer-main__left {
     width: 100%;
@@ -192,6 +197,7 @@
 
 .footer-subscribe {
   padding-bottom: 24px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
 }
