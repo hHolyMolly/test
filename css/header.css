@@ -100,15 +100,6 @@
   opacity: 1;
   transform: translateY(0%);
 }
-.header-lang__dropdown::-webkit-scrollbar {
-  width: 4px;
-}
-.header-lang__dropdown::-webkit-scrollbar-track {
-  background: transparent;
-}
-.header-lang__dropdown::-webkit-scrollbar-thumb {
-  background-color: var(--grey-300);
-}
 .header-lang__dropdown li {
   padding: 0 12px;
   min-height: 22px;
@@ -135,6 +126,17 @@
   }
   .header-lang__dropdown li:not(._active):hover {
     background-color: #f4f8ff;
+  }
+}
+@media (any-hover: hover) {
+  .header-lang__dropdown::-webkit-scrollbar {
+    width: 4px;
+  }
+  .header-lang__dropdown::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .header-lang__dropdown::-webkit-scrollbar-thumb {
+    background-color: var(--grey-300);
   }
 }
 
