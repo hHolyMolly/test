@@ -2228,6 +2228,7 @@ body._lock-scroll {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: transparent;
 }
 .favorite-news-slider__arrows .swiper-button-prev svg,
 .favorite-news-slider__arrows .swiper-button-next svg {
