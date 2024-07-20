@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.popup {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease 0s;
+  background-color: rgba(27, 27, 27, 0.6);
+}
+.popup._active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup._active .popup__body {
+  transform: scale(1);
+}
+.popup__body {
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  margin: auto;
+  width: 100%;
+  transform: scale(0.9);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease 0s;
+  background-color: var(--white);
+}
+.popup__body {
+  padding-top: 32px;
+}
+@media (max-width: 1320px) {
+  .popup__body {
+    padding-top: calc(25px + 7 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.popup__body {
+  padding-right: 28px;
+}
+@media (max-width: 1320px) {
+  .popup__body {
+    padding-right: calc(15px + 13 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.popup__body {
+  padding-left: 28px;
+}
+@media (max-width: 1320px) {
+  .popup__body {
+    padding-left: calc(15px + 13 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.popup__body {
+  padding-bottom: 32px;
+}
+@media (max-width: 1320px) {
+  .popup__body {
+    padding-bottom: calc(25px + 7 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.popup__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Если меньше контейнера */
+  font-weight: 500;
+  line-height: 116.6666666667%;
+  text-align: center;
+  color: var(--black-700);
+}
+.popup__top {
+  font-size: 24px;
+}
+@media (max-width: 1320px) {
+  .popup__top {
+    font-size: calc(20px + 4 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.popup__top:not(:last-child) {
+  /* Если меньше контейнера */
+}
+.popup__top:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 1320px) {
+  .popup__top:not(:last-child) {
+    margin-bottom: calc(15px + 5 * (100vw - 320px) / (1320 - 320));
+  }
+}
