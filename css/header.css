@@ -225,18 +225,20 @@
   top: 0;
   left: 0;
   z-index: 15;
+  border-bottom: 1px solid transparent;
 }
 .header-main._scroll {
+  border-color: #f2f4fd;
   background-color: var(--white);
 }
 @media (min-width: 991.98px) {
   .header-main._scroll {
-    transition: background-color 0.3s ease 0s;
+    transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s;
   }
 }
 @media (max-width: 991.98px) {
   .header-main {
-    transition: background-color 0.3s ease 0s;
+    transition: border-color 0.3s ease 0s, background-color 0.3s ease 0s;
   }
   .header-main:after {
     content: "";
@@ -247,6 +249,7 @@
     left: -100%;
     z-index: 11;
     transition: left 0.3s ease 0s;
+    border-bottom: 1px solid #f2f4fd;
     background-color: var(--white);
   }
   .header-main._active:after {

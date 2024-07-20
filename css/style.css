@@ -82,6 +82,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--background-page);
   font-family: var(--font-family);
   color: var(--black-900);
@@ -116,6 +117,8 @@ body._lock-scroll {
   /* Если меньше контейнера */
   padding-bottom: 50px;
   flex: 1 1 auto;
+  position: relative;
+  z-index: 2;
 }
 .page {
   padding-top: 45px;
@@ -209,6 +212,7 @@ body._lock-scroll {
   }
 }
 .exchanger-main-left__title {
+  overflow-wrap: anywhere;
   /* Если меньше контейнера */
   font-weight: 600;
   line-height: 123.4375%;
@@ -243,7 +247,7 @@ body._lock-scroll {
 .exchanger-main-left__text p,
 .exchanger-main-left__text ul,
 .exchanger-main-left__text ol {
-  font-family: Inter;
+  overflow-wrap: anywhere;
   /* Если меньше контейнера */
   font-weight: 400;
   line-height: 123.0769230769%;
@@ -339,6 +343,7 @@ body._lock-scroll {
 .exchanger-main-left__link {
   display: inline-flex;
   align-items: center;
+  overflow-wrap: anywhere;
   text-decoration: none;
   font-size: 14.75px;
   font-weight: 500;
@@ -352,6 +357,7 @@ body._lock-scroll {
   margin-right: 8px;
 }
 .exchanger-main-left__link svg {
+  flex-shrink: 0;
   stroke: var(--black-900);
 }
 @media (any-hover: hover) {
@@ -806,6 +812,7 @@ body._lock-scroll {
   margin-right: 8px;
 }
 .exchanger-main-form-dropdown__name {
+  overflow-wrap: anywhere;
   font-family: "Rubik", sans-serif;
   /* Если меньше контейнера */
   font-weight: 600;
@@ -1001,6 +1008,7 @@ body._lock-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .cooperate-with-best__items {
   column-gap: 50px;
@@ -2312,5 +2320,370 @@ body._lock-scroll {
 @media (max-width: 1320px) {
   .favorite-news-slider__title {
     font-size: calc(18px + 4 * (100vw - 320px) / (1320 - 320));
+  }
+}
+
+.decor-home__item {
+  position: absolute;
+  pointer-events: none;
+}
+.decor-home__item img {
+  max-width: 100%;
+}
+.decor-home__item_01 {
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+}
+.decor-home__item_01 {
+  width: 487px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01 {
+    width: calc(200px + 287 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01 {
+  top: 200px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01 {
+    top: calc(0px + 200 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01:after {
+  content: "";
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  position: absolute;
+  /* Если меньше контейнера */
+  /* Если меньше контейнера */
+  z-index: 1;
+  /* Если меньше контейнера */
+  backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.decor-home__item_01:after {
+  width: 420px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01:after {
+    width: calc(150px + 270 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01:after {
+  height: 405px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01:after {
+    height: calc(140px + 265 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01:after {
+  top: 130px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01:after {
+    top: calc(52px + 78 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01:after {
+  left: -130px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01:after {
+    left: calc(-40px + -90 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_01:after {
+  border-radius: 40px;
+}
+@media (max-width: 1320px) {
+  .decor-home__item_01:after {
+    border-radius: calc(24px + 16 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_01 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_01 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_01 {
+    top: 100px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_01 {
+    top: calc(45px + 55 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_01 {
+    right: 100px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_01 {
+    right: calc(-60px + 160 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 1239.98px) {
+  .decor-home__item_02 {
+    /* Всегда */
+    /* Всегда */
+    /* Всегда */
+  }
+  .decor-home__item_02 {
+    width: calc(104px + 40 * (100vw - 320px) / (1920 - 320));
+  }
+  .decor-home__item_02 {
+    top: calc(1200px + -260 * (100vw - 320px) / (1920 - 320));
+  }
+  .decor-home__item_02 {
+    right: calc(-130px + 210 * (100vw - 320px) / (1920 - 320));
+  }
+}
+@media (max-width: 1239.98px) and (min-width: 991.98px) {
+  .decor-home__item_02 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+    right: 20px;
+  }
+  .decor-home__item_02 {
+    width: 144px;
+  }
+}
+@media (max-width: 1239.98px) and (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_02 {
+    width: calc(94px + 50 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 1239.98px) and (min-width: 991.98px) {
+  .decor-home__item_02 {
+    top: 1030px;
+  }
+}
+@media (max-width: 1239.98px) and (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_02 {
+    top: calc(930px + 100 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_02 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_02 {
+    width: 144px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_02 {
+    width: calc(64px + 80 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_02 {
+    top: 1480px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_02 {
+    top: calc(1095px + 385 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_02 {
+    right: 80px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_02 {
+    right: calc(10px + 70 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_03 {
+  width: 144px;
+  top: 1800px;
+  left: 25px;
+  transform: rotate(-110deg);
+}
+@media (min-width: 1239.98px) {
+  .decor-home__item_03 {
+    /* Всегда */
+    /* Всегда */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_03 {
+    width: calc(84px + 60 * (100vw - 320px) / (1920 - 320));
+  }
+  .decor-home__item_03 {
+    top: calc(1100px + 700 * (100vw - 320px) / (1920 - 320));
+  }
+  .decor-home__item_03 {
+    left: 25px;
+  }
+}
+@media (min-width: 1239.98px) and (max-width: 1320px) {
+  .decor-home__item_03 {
+    left: calc(10px + 15 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 1239.98px) and (min-width: 991.98px) {
+  .decor-home__item_03 {
+    width: 104px;
+    top: 1520px;
+    left: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_03 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_03 {
+    width: 124px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_03 {
+    width: calc(55px + 69 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_03 {
+    top: 1800px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_03 {
+    top: calc(1600px + 200 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_03 {
+    left: 80px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_03 {
+    left: calc(0px + 80 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 767.98px) {
+  .decor-home__item_03 {
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_03 {
+    top: 1800px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 1320px) {
+  .decor-home__item_03 {
+    top: calc(1460px + 340 * (100vw - 320px) / (1320 - 320));
+  }
+}
+.decor-home__item_04 {
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_04 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_04 {
+    margin-left: -100px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_04 {
+    margin-left: calc(-20px + -80 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_04 {
+    width: 481px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_04 {
+    width: calc(221px + 260 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_04 {
+    top: 1980px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_04 {
+    top: calc(1720px + 260 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_04 {
+    display: none;
+  }
+}
+.decor-home__item_05:after {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_05 {
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+    /* Если меньше контейнера */
+  }
+  .decor-home__item_05 {
+    width: 315px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_05 {
+    width: calc(215px + 100 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_05 {
+    top: 2980px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_05 {
+    top: calc(2220px + 760 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .decor-home__item_05 {
+    right: 280px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .decor-home__item_05 {
+    right: calc(50px + 230 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (max-width: 991.98px) {
+  .decor-home__item_05 {
+    display: none;
   }
 }
