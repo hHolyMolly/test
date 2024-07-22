@@ -147,11 +147,11 @@
   align-items: center;
 }
 .header-socials {
-  margin-right: 25px;
+  margin-right: 70px;
 }
 @media (max-width: 1320px) {
   .header-socials {
-    margin-right: calc(0px + 25 * (100vw - 320px) / (1320 - 320));
+    margin-right: calc(0px + 70 * (100vw - 320px) / (1320 - 320));
   }
 }
 .header-socials__item {

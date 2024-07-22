@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .footer {
   padding: 40px 0 25px;
+  position: relative;
+  z-index: 5;
   background-color: var(--white);
 }
 
