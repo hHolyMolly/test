@@ -16,7 +16,10 @@
 <!-- Подключаем шрифт "Inter" и "Rubik" -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet"
+/>
 
 
     <title>monopriz_mine</title>
@@ -960,7 +963,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Авторизация</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Логин или e-mail:</span>
 
@@ -1021,7 +1024,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Регистрация</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Ваш e-mail:</span>
 
@@ -1082,7 +1085,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Восстановить пароль</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Ваш e-mail:</span>
 
@@ -1118,6 +1121,72 @@
         </div>
 
         <button class="popup-auth__submit button button_purple" type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Добавить счет" -->
+  <div class="popup" id="modal-add-bills">
+    <div class="popup__body" style="max-width: 670px">
+      <div class="popup__top popup-bills-title">Добавить счет</div>
+
+      <form class="popup__content popup-bills" novalidate autocomplete="off">
+        <div class="popup-bills-select">
+          <span class="popup-bills-select__title">Платежная система:</span>
+
+          <div class="popup-bills-select__body">
+            <input class="popup-bills-select__button" type="text" disabled placeholder="Выберите валюту..." />
+
+            <div class="popup-bills-select__dropdown">
+              <div class="popup-bills-select__top">
+                <div class="popup-bills-select__placeholder">Выберите валюту...</div>
+
+                <button class="popup-bills-select__close" type="button">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.0001 5.9334L1.61673 9.3167C1.4834 9.4501 1.32784 9.5167 1.15007 9.5167C0.972289 9.5167 0.816729 9.4501 0.683399 9.3167C0.550069 9.1834 0.483398 9.0278 0.483398 8.8501C0.483398 8.6723 0.550069 8.5167 0.683399 8.3834L4.0667 5.0001L0.683399 1.61673C0.550069 1.4834 0.483398 1.32784 0.483398 1.15007C0.483398 0.972289 0.550069 0.816729 0.683399 0.683399C0.816729 0.550069 0.972289 0.483398 1.15007 0.483398C1.32784 0.483398 1.4834 0.550069 1.61673 0.683399L5.0001 4.0667L8.3834 0.683399C8.5167 0.550069 8.6723 0.483398 8.8501 0.483398C9.0278 0.483398 9.1834 0.550069 9.3167 0.683399C9.4501 0.816729 9.5167 0.972289 9.5167 1.15007C9.5167 1.32784 9.4501 1.4834 9.3167 1.61673L5.9334 5.0001L9.3167 8.3834C9.4501 8.5167 9.5167 8.6723 9.5167 8.8501C9.5167 9.0278 9.4501 9.1834 9.3167 9.3167C9.1834 9.4501 9.0278 9.5167 8.8501 9.5167C8.6723 9.5167 8.5167 9.4501 8.3834 9.3167L5.0001 5.9334Z"
+                      fill="var(--purple-500)"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="popup-bills-select__list">
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <label class="field-item">
+          <span class="field-item__title">Номер счета</span>
+
+          <input name="number" type="text" />
+        </label>
+
+        <button class="popup-bills__button button button_purple" type="submit">Добавить счет</button>
       </form>
     </div>
   </div>

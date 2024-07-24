@@ -16,7 +16,10 @@
 <!-- Подключаем шрифт "Inter" и "Rubik" -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet"
+/>
 
 
     <title>monopriz_contacts</title>
@@ -149,117 +152,159 @@
 
               <div class="content__grid">
                 <div class="content__main contacts-page">
-                  <form class="contacts-page-form">
-                    <label class="field-item">
-                      <span class="field-item__title">Имя:</span>
+                  <form class="contacts-page-form" novalidate autocomplete="off">
+                    <div class="contacts-page-form__content">
+                      <div class="contacts-page-form__inputs">
+                        <label class="field-item">
+                          <span class="field-item__title">Имя:</span>
 
-                      <input name="name" type="text" />
-                    </label>
+                          <input name="name" type="text" />
+                        </label>
 
-                    <label class="field-item">
-                      <span class="field-item__title">E-mail:</span>
+                        <label class="field-item">
+                          <span class="field-item__title">E-mail:</span>
 
-                      <input name="email" type="email" />
-                    </label>
+                          <input name="email" type="email" />
+                        </label>
 
-                    <label class="field-item">
-                      <span class="field-item__title">ID обмена:</span>
+                        <label class="field-item">
+                          <span class="field-item__title">ID обмена:</span>
 
-                      <input name="ID-exchange" type="text" />
-                    </label>
+                          <input name="ID-exchange" type="text" />
+                        </label>
 
-                    <label class="field-item">
-                      <span class="field-item__title">Сообщение:</span>
+                        <label class="field-item">
+                          <span class="field-item__title">Сообщение:</span>
 
-                      <textarea name="message"></textarea>
-                    </label>
-
-                    <div class="captcha-block">
-                      <div class="captcha-block__number">
-                        <img src="./img/captcha-first.png" loading="lazy" alt="" />
+                          <textarea name="message"></textarea>
+                        </label>
                       </div>
 
-                      <div class="captcha-block__math-symbols">x</div>
+                      <div class="captcha-block">
+                        <div class="captcha-block__number">
+                          <img src="./img/captcha-first.png" loading="lazy" alt="" />
+                        </div>
 
-                      <div class="captcha-block__number">
-                        <img src="./img/captcha-second.png" loading="lazy" alt="" />
+                        <div class="captcha-block__math-symbols">x</div>
+
+                        <div class="captcha-block__number">
+                          <img src="./img/captcha-second.png" loading="lazy" alt="" />
+                        </div>
+
+                        <div class="captcha-block__math-symbols">=</div>
+
+                        <div class="captcha-block__field">
+                          <input name="captcha" type="number" />
+                        </div>
+
+                        <button class="captcha-block__reset" type="button">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M8.9374 17.5124C6.57767 17.5124 4.56719 16.6814 2.90594 15.0195C1.24469 13.3576 0.414062 11.3524 0.414062 9.004C0.414062 6.65564 1.24469 4.64494 2.90594 2.97193C4.56719 1.29891 6.57823 0.462402 8.9391 0.462402C10.4391 0.462402 11.7653 0.766342 12.9177 1.37423C14.0701 1.98209 15.0605 2.83649 15.8891 3.9374V0.462402H17.6266V7.5999H10.4641V5.8874H14.5016C13.851 4.95352 13.0716 4.20129 12.1631 3.63073C11.2547 3.06018 10.1804 2.7749 8.94 2.7749C7.1936 2.7749 5.71719 3.37748 4.51094 4.58263C3.30469 5.78778 2.70156 7.2607 2.70156 9.0014C2.70156 10.7421 3.30371 12.2145 4.50801 13.4187C5.71233 14.6228 7.1882 15.2249 8.9355 15.2249C10.2234 15.2249 11.4168 14.8541 12.5157 14.1124C13.6146 13.3707 14.399 12.3874 14.8688 11.1624H17.2266C16.7349 13.0457 15.7203 14.5749 14.1829 15.7499C12.6455 16.9249 10.897 17.5124 8.9374 17.5124Z"
+                            />
+                          </svg>
+                        </button>
                       </div>
 
-                      <div class="captcha-block__math-symbols">=</div>
-
-                      <div class="captcha-block__field">
-                        <input name="captcha" type="number" />
-                      </div>
-
-                      <button class="captcha-block__reset" type="button">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.9374 17.5124C6.57767 17.5124 4.56719 16.6814 2.90594 15.0195C1.24469 13.3576 0.414062 11.3524 0.414062 9.004C0.414062 6.65564 1.24469 4.64494 2.90594 2.97193C4.56719 1.29891 6.57823 0.462402 8.9391 0.462402C10.4391 0.462402 11.7653 0.766342 12.9177 1.37423C14.0701 1.98209 15.0605 2.83649 15.8891 3.9374V0.462402H17.6266V7.5999H10.4641V5.8874H14.5016C13.851 4.95352 13.0716 4.20129 12.1631 3.63073C11.2547 3.06018 10.1804 2.7749 8.94 2.7749C7.1936 2.7749 5.71719 3.37748 4.51094 4.58263C3.30469 5.78778 2.70156 7.2607 2.70156 9.0014C2.70156 10.7421 3.30371 12.2145 4.50801 13.4187C5.71233 14.6228 7.1882 15.2249 8.9355 15.2249C10.2234 15.2249 11.4168 14.8541 12.5157 14.1124C13.6146 13.3707 14.399 12.3874 14.8688 11.1624H17.2266C16.7349 13.0457 15.7203 14.5749 14.1829 15.7499C12.6455 16.9249 10.897 17.5124 8.9374 17.5124Z"
-                          />
-                        </svg>
-                      </button>
+                      <button class="contacts-page-form__submit button button_purple" type="submit">Отправить сообщение</button>
                     </div>
-
-                    <button class="contacts-page-form__submit button button_purple" type="submit">Отправить сообщение</button>
                   </form>
                 </div>
 
                 <aside class="content__sidebar">
-                  <div class="content__sidebar-box content-sidebar-auth">
-                    <div class="content-sidebar-auth__title">Авторизация</div>
+                  <!-- Sidebar authorization -->
 
-                    <label class="field-item">
-                      <span class="field-item__title">Логин или e-mail:</span>
+                  <form class="content__sidebar-box content-sidebar-auth contacts-page-sidebar-box" novalidate autocomplete="off">
+  <div class="content-sidebar-auth__title">Авторизация</div>
 
-                      <input name="login-or-email" type="text" />
-                    </label>
+  <label class="field-item">
+    <span class="field-item__title">Логин или e-mail:</span>
 
-                    <label class="field-item">
-                      <span class="field-item__title">Пароль:</span>
+    <input name="login-or-email" type="text" />
+  </label>
 
-                      <input name="password" type="password" />
-                    </label>
+  <label class="field-item">
+    <span class="field-item__title">Пароль:</span>
 
-                    <label class="field-item">
-                      <span class="field-item__title">Персональный пин код:</span>
+    <input name="password" type="password" />
+  </label>
 
-                      <input name="code" type="number" />
-                    </label>
+  <label class="field-item">
+    <span class="field-item__title">Персональный пин код:</span>
 
-                    <div class="captcha-block">
-                      <div class="captcha-block__number">
-                        <img src="./img/captcha-first.png" loading="lazy" alt="" />
-                      </div>
+    <input name="code" type="number" />
+  </label>
 
-                      <div class="captcha-block__math-symbols">x</div>
+  <div class="captcha-block">
+    <div class="captcha-block__number">
+      <img src="./img/captcha-first.png" loading="lazy" alt="" />
+    </div>
 
-                      <div class="captcha-block__number">
-                        <img src="./img/captcha-second.png" loading="lazy" alt="" />
-                      </div>
+    <div class="captcha-block__math-symbols">x</div>
 
-                      <div class="captcha-block__math-symbols">=</div>
+    <div class="captcha-block__number">
+      <img src="./img/captcha-second.png" loading="lazy" alt="" />
+    </div>
 
-                      <div class="captcha-block__field">
-                        <input name="captcha" type="number" />
-                      </div>
+    <div class="captcha-block__math-symbols">=</div>
 
-                      <button class="captcha-block__reset" type="button">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8.9374 17.5124C6.57767 17.5124 4.56719 16.6814 2.90594 15.0195C1.24469 13.3576 0.414062 11.3524 0.414062 9.004C0.414062 6.65564 1.24469 4.64494 2.90594 2.97193C4.56719 1.29891 6.57823 0.462402 8.9391 0.462402C10.4391 0.462402 11.7653 0.766342 12.9177 1.37423C14.0701 1.98209 15.0605 2.83649 15.8891 3.9374V0.462402H17.6266V7.5999H10.4641V5.8874H14.5016C13.851 4.95352 13.0716 4.20129 12.1631 3.63073C11.2547 3.06018 10.1804 2.7749 8.94 2.7749C7.1936 2.7749 5.71719 3.37748 4.51094 4.58263C3.30469 5.78778 2.70156 7.2607 2.70156 9.0014C2.70156 10.7421 3.30371 12.2145 4.50801 13.4187C5.71233 14.6228 7.1882 15.2249 8.9355 15.2249C10.2234 15.2249 11.4168 14.8541 12.5157 14.1124C13.6146 13.3707 14.399 12.3874 14.8688 11.1624H17.2266C16.7349 13.0457 15.7203 14.5749 14.1829 15.7499C12.6455 16.9249 10.897 17.5124 8.9374 17.5124Z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+    <div class="captcha-block__field">
+      <input name="captcha" type="number" />
+    </div>
 
-                    <button class="content-sidebar-auth__submit button button_purple" type="submit">Войти</button>
+    <button class="captcha-block__reset" type="button">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8.9374 17.5124C6.57767 17.5124 4.56719 16.6814 2.90594 15.0195C1.24469 13.3576 0.414062 11.3524 0.414062 9.004C0.414062 6.65564 1.24469 4.64494 2.90594 2.97193C4.56719 1.29891 6.57823 0.462402 8.9391 0.462402C10.4391 0.462402 11.7653 0.766342 12.9177 1.37423C14.0701 1.98209 15.0605 2.83649 15.8891 3.9374V0.462402H17.6266V7.5999H10.4641V5.8874H14.5016C13.851 4.95352 13.0716 4.20129 12.1631 3.63073C11.2547 3.06018 10.1804 2.7749 8.94 2.7749C7.1936 2.7749 5.71719 3.37748 4.51094 4.58263C3.30469 5.78778 2.70156 7.2607 2.70156 9.0014C2.70156 10.7421 3.30371 12.2145 4.50801 13.4187C5.71233 14.6228 7.1882 15.2249 8.9355 15.2249C10.2234 15.2249 11.4168 14.8541 12.5157 14.1124C13.6146 13.3707 14.399 12.3874 14.8688 11.1624H17.2266C16.7349 13.0457 15.7203 14.5749 14.1829 15.7499C12.6455 16.9249 10.897 17.5124 8.9374 17.5124Z"
+        />
+      </svg>
+    </button>
+  </div>
 
-                    <div class="content-sidebar-auth__links">
-                      <button class="content-sidebar-auth__links-item" data-popup-open data-popup="modal-register" type="button">Регистрация</button>
+  <button class="content-sidebar-auth__submit button button_purple" type="submit">Войти</button>
 
-                      <button class="content-sidebar-auth__links-item" data-popup-open data-popup="modal-password" type="button">Забыли пароль?</button>
-                    </div>
-                  </div>
+  <div class="content-sidebar-auth__links">
+    <button class="content-sidebar-auth__links-item" data-popup-open data-popup="modal-register" type="button">Регистрация</button>
+
+    <button class="content-sidebar-auth__links-item" data-popup-open data-popup="modal-password" type="button">Забыли пароль?</button>
+  </div>
+</form>
+
+
+                  <!-- Sidebar reviews -->
+
+                  <div class="content-sidebar-reviews content__sidebar-box">
+  <div class="content-sidebar-reviews__title">Отзывы</div>
+
+  <div class="content-sidebar-reviews__items">
+    <div class="content-sidebar-reviews-card">
+      <div class="content-sidebar-reviews-card__rating">
+        <div class="content-sidebar-reviews-card__rating-active" style="width: 100%"></div>
+      </div>
+
+      <span class="content-sidebar-reviews-card__name"> Вика </span>
+
+      <time class="content-sidebar-reviews-card__time" datetime="27.06.2024, 16:05"> 27.06.2024, 16:05 </time>
+
+      <p class="content-sidebar-reviews-card__text">Спасибо за быстрый обмен</p>
+    </div>
+
+    <div class="content-sidebar-reviews-card">
+      <div class="content-sidebar-reviews-card__rating">
+        <div class="content-sidebar-reviews-card__rating-active" style="width: 100%"></div>
+      </div>
+
+      <span class="content-sidebar-reviews-card__name"> Алексей </span>
+
+      <time class="content-sidebar-reviews-card__time" datetime="28.05.2024, 17:46"> 28.05.2024, 17:46 </time>
+
+      <p class="content-sidebar-reviews-card__text">Менял 5000 долларов, деньги пришли в течении 15 минут</p>
+    </div>
+  </div>
+
+  <a class="content-sidebar-reviews__all button button_blue-border" href="#"> Все отзывы </a>
+</div>
+
                 </aside>
               </div>
             </div>
@@ -465,7 +510,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Авторизация</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Логин или e-mail:</span>
 
@@ -526,7 +571,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Регистрация</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Ваш e-mail:</span>
 
@@ -587,7 +632,7 @@
     <div class="popup__body" style="max-width: 465px">
       <div class="popup__top">Восстановить пароль</div>
 
-      <form class="popup__content popup-auth" autocomplete="off">
+      <form class="popup__content popup-auth" novalidate autocomplete="off">
         <label class="field-item">
           <span class="field-item__title">Ваш e-mail:</span>
 
@@ -623,6 +668,72 @@
         </div>
 
         <button class="popup-auth__submit button button_purple" type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Добавить счет" -->
+  <div class="popup" id="modal-add-bills">
+    <div class="popup__body" style="max-width: 670px">
+      <div class="popup__top popup-bills-title">Добавить счет</div>
+
+      <form class="popup__content popup-bills" novalidate autocomplete="off">
+        <div class="popup-bills-select">
+          <span class="popup-bills-select__title">Платежная система:</span>
+
+          <div class="popup-bills-select__body">
+            <input class="popup-bills-select__button" type="text" disabled placeholder="Выберите валюту..." />
+
+            <div class="popup-bills-select__dropdown">
+              <div class="popup-bills-select__top">
+                <div class="popup-bills-select__placeholder">Выберите валюту...</div>
+
+                <button class="popup-bills-select__close" type="button">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.0001 5.9334L1.61673 9.3167C1.4834 9.4501 1.32784 9.5167 1.15007 9.5167C0.972289 9.5167 0.816729 9.4501 0.683399 9.3167C0.550069 9.1834 0.483398 9.0278 0.483398 8.8501C0.483398 8.6723 0.550069 8.5167 0.683399 8.3834L4.0667 5.0001L0.683399 1.61673C0.550069 1.4834 0.483398 1.32784 0.483398 1.15007C0.483398 0.972289 0.550069 0.816729 0.683399 0.683399C0.816729 0.550069 0.972289 0.483398 1.15007 0.483398C1.32784 0.483398 1.4834 0.550069 1.61673 0.683399L5.0001 4.0667L8.3834 0.683399C8.5167 0.550069 8.6723 0.483398 8.8501 0.483398C9.0278 0.483398 9.1834 0.550069 9.3167 0.683399C9.4501 0.816729 9.5167 0.972289 9.5167 1.15007C9.5167 1.32784 9.4501 1.4834 9.3167 1.61673L5.9334 5.0001L9.3167 8.3834C9.4501 8.5167 9.5167 8.6723 9.5167 8.8501C9.5167 9.0278 9.4501 9.1834 9.3167 9.3167C9.1834 9.4501 9.0278 9.5167 8.8501 9.5167C8.6723 9.5167 8.5167 9.4501 8.3834 9.3167L5.0001 5.9334Z"
+                      fill="var(--purple-500)"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="popup-bills-select__list">
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+
+                <li>Visa/MasterCard USD</li>
+
+                <li>Visa/MasterCard EUR</li>
+
+                <li>Visa/MasterCard RUB</li>
+
+                <li>Visa/MasterCard UAH</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <label class="field-item">
+          <span class="field-item__title">Номер счета</span>
+
+          <input name="number" type="text" />
+        </label>
+
+        <button class="popup-bills__button button button_purple" type="submit">Добавить счет</button>
       </form>
     </div>
   </div>
