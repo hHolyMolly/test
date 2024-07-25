@@ -11,6 +11,7 @@
 .header-top__body {
   min-height: 94px;
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
 }
 .header-top__actions {
@@ -18,7 +19,6 @@
   gap: 8px;
   display: flex;
   align-items: center;
-  flex: 1 1 auto;
 }
 .header-top__actions .header-lang {
   order: 1;
@@ -152,6 +152,19 @@
 @media (max-width: 1320px) {
   .header-socials {
     margin-right: calc(0px + 70 * (100vw - 320px) / (1320 - 320));
+  }
+}
+@media (min-width: 991.98px) {
+  .header-socials {
+    /* Если меньше контейнера */
+  }
+  .header-socials {
+    margin-right: -100px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1320px) {
+  .header-socials {
+    margin-right: calc(0px + -100 * (100vw - 320px) / (1320 - 320));
   }
 }
 .header-socials__item {

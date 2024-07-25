@@ -26,6 +26,10 @@ if (form) {
           if (!target.closest('[data-exchanger-form="target"]') && !target.closest('[data-exchanger-form="dropdown"]')) {
             dropdown.classList.remove('_active');
           }
+
+          if (target.closest('.exchanger-main-form-dropdown__items li')) {
+            dropdown.classList.remove('_active');
+          }
         });
       }
     });
