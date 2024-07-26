@@ -244,7 +244,7 @@
   font-weight: 600;
   line-height: 116.6666666667%;
   text-align: left;
-  color: #272727;
+  color: var(--black-800);
 }
 .popup-bills-title:not(:last-child) {
   /* Если меньше контейнера */

@@ -22,7 +22,7 @@
 />
 
 
-    <title>monopriz_AML/CTF и KYC</title>
+    <title>monopriz_exchange_2</title>
   </head>
 
   <body>
@@ -88,9 +88,9 @@
       </div>
 
       <div class="header-auth" data-da=".header-main__right,991.98,0">
-        <a class="header-auth__login button button_white" href="account_personal-data.html">Аккаунт</a>
+        <button class="header-auth__login button button_white" data-popup-open data-popup="modal-login" type="button">Войти</button>
 
-        <a class="header-auth__register button button_white" href="#">Выйти</a>
+        <button class="header-auth__register button button_white" data-popup-open data-popup="modal-register" type="button">Регистрация</button>
       </div>
     </div>
   </div>
@@ -144,48 +144,104 @@
 </div>
 
 
-      <main class="page">
-        <div class="content">
+      <main class="page leave-feedback-margin">
+        <div class="content content-transform">
           <div class="_container">
             <div class="content__body">
-              <h1 class="content__title page-title page-title_little">Политика AML/CTF и KYC</h1>
+              <h1 class="content__title page-title page-title_little">ID обмена: 251-175</h1>
 
               <div class="content__grid">
-                <div class="content__main aml-ctf-kyc-text">
-                  Политика <br />
-                  по борьбе с отмыванием денег <br />
-                  AML <br />
-                  (anti-money laundering policy) <br />
-                  Дата вступления в силу: 01.01.2017 года. <br />
-                  Обновлено 01.01.2022 года. <br />
-                  Настоящая Политика AML (далее — Политика) регламентирует деятельность monopriz.com, в отношении борьбы с отмыванием денег и ее вовлеченность в борьбе с отмыванием
-                  денег и финансированием террористической деятельности. <br />
-                  Термины и определения <br />
-                  monopriz.com – это торговая марка системы, предоставляющей Пользователям возможность обмена цифровой и электронной валюты. <br />
-                  Сервис – система предоставления интернет-услуг по обмену, продаже и покупке цифровых и/или электронных валют. <br />
-                  Пользователь – это любое физическое лицо, использующее услуги сервиса monopriz.com. <br />
-                  Цифровая валюта – Bitcoin, Litecoin, Ethereum и любые иные валюты, основанные на блокчейне. <br />
-                  Электронная валюта – денежные средства, находящиеся на счетах пользователей электронных платежных систем (Qiwi, Яндекс Деньги и др.). <br />
-                  Услуги сервиса – оказание содействия в проведении р2р-операций между физическими лицами по купле-продаже и обмену цифровых валют, а также иные услуги, информация
-                  о которых размещена на витрине Сервиса. <br />
-                  Верификация карты – это проверка принадлежности карты (или счета) её владельцу. Условия проверки принадлежности устанавливает Сервис, производиться единовременно
-                  для каждого нового счета (карты) Пользователя. <br />
-                  Отмывание денег – придание правомерного вида владению, пользованию или распоряжению денежными средствами или иным имуществом, полученными в результате совершения
-                  преступления. monopriz.com строго следует законам, запрещающим нам или любому из наших сотрудников сознательно заниматься или пытаться заниматься любыми видами
-                  деятельности, так или иначе связанными с отмыванием денег. Наша политика противодействия отмыванию денег направлена на повышение безопасности клиентов и
-                  оказываемых Сервисом услуг. <br />
-                  Финансирование терроризма – умышленное предоставление или сбор любыми средствами, прямо или косвенно, средств с намерением использовать эти средства или при
-                  условии, что они будут использоваться для совершения террористических актов. <br />
-                  Мероприятия, предпринятые в рамках соблюдения Политики AML Администрация сервиса monopriz.com, понимая общественную опасность преступлений, связанных с отмыванием
-                  денежных средств и финансированием террористической деятельности, разработала комплекс организационно-правовых мер, с целью соблюдения положений национального
-                  законодательства. <br />
-                  1. Применение политики KYC (know your customer – знай своего клиента). Обязательная идентификация Пользователей, которым разрешено совершать транзакции на нашем
-                  Сервисе. Для верификации Пользователя Администрация вправе потребовать предоставить следующие данные: <br />
-                  сделать фотографию («селфи») с документом, удостоверяющим личность гражданина: скан-копия лицевой и обратной сторон официального удостоверения личности с
-                  фотографией, то есть действительный паспорт, водительское удостоверение или иное национальное удостоверение личности; <br />
-                  подтвердить место жительства: официальный документ, выпущенный в течение последних 3 месяцев, с четким указанием имени и адреса клиента, указанных при регистрации
-                  на сайте monopriz.com. Это может быть счет за коммунальные услуги (за воду, электричество или стационарный телефон) или выписка из банка. Копия должна включать в
-                  себя: полное имя, полный адрес проживания, дату выдачи (в пределах последних 3 месяцев), название органа, выдавшего документ, с официальным логотипом или печатью;
+                <div class="content__main content-exchange" style="overflow: hidden">
+                  <div class="content-exchange__body">
+                    <div class="content-exchange__form">
+                      <h2 class="content-exchange__title">Ожидание вашего депозита</h2>
+
+                      <div class="content-exchange-give">
+                        <div class="content-exchange-give__left">
+                          <div class="content-exchange-give__title">Отправьте: <img src="./img/currency/tether.png" loading="lazy" alt="Tether" /> 0.01 BTC</div>
+
+                          <div class="content-exchange-give__text">Проверьте детали заявки и отправьте денежные средства одной транзакцией на указанный адрес:</div>
+                        </div>
+
+                        <div class="content-exchange-give__qr-code">
+                          <img src="./img/qr-code.png" loading="lazy" alt="qr code" />
+                        </div>
+                      </div>
+
+                      <div class="content-exchange-copy">
+                        <div class="content-exchange-copy__wallet">13B210812c43e71N4Qbzg6LSXUXyXu2Mbf7f01Eо</div>
+
+                        <button class="content-exchange-copy__button" data-copy="13B210812c43e71N4Qbzg6LSXUXyXu2Mbf7f01Eо" type="button">
+                          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12.4626 2.78223L10.0205 0.35752C9.92207 0.259766 9.78911 0.205078 9.65068 0.205078H4.34121C3.51953 0.205078 2.85132 0.872949 2.85132 1.69463V2.13486H2.41177C1.59009 2.13486 0.921875 2.80273 0.921875 3.62441V12.7155C0.921875 13.5372 1.59009 14.2051 2.41177 14.2051H9.19849C10.0202 14.2051 10.6884 13.5372 10.6884 12.7155V12.2753H11.1279C11.9496 12.2753 12.6178 11.6074 12.6178 10.7857V3.15479C12.6178 3.01465 12.5621 2.88066 12.4626 2.78223ZM9.63838 12.7155C9.63838 12.9582 9.44116 13.1551 9.19849 13.1551H2.41177C2.16909 13.1551 1.97187 12.9582 1.97187 12.7155V3.62441C1.97187 3.38174 2.16909 3.18486 2.41177 3.18486H2.85132V10.7857C2.85132 11.6074 3.51953 12.2753 4.34121 12.2753H9.63838V12.7155ZM11.5678 10.7857C11.5678 11.0284 11.3706 11.2253 11.1279 11.2253H4.34121C4.09854 11.2253 3.90132 11.0284 3.90132 10.7857V1.69463C3.90132 1.45195 4.09854 1.25508 4.34121 1.25508H9.43433L11.5678 3.37354V10.7857Z"
+                            />
+                            <path
+                              d="M10.5999 4.2207H6.74062C6.54717 4.2207 6.39062 4.37725 6.39062 4.5707C6.39062 4.76416 6.54717 4.9207 6.74062 4.9207H10.5999C10.7933 4.9207 10.9499 4.76416 10.9499 4.5707C10.9499 4.37725 10.7933 4.2207 10.5999 4.2207Z"
+                            />
+                            <path
+                              d="M6.39258 2.64126C6.39258 2.83472 6.54912 2.99126 6.74258 2.99126H10.6018C10.7953 2.99126 10.9518 2.83472 10.9518 2.64126C10.9518 2.4478 10.7953 2.29126 10.6018 2.29126H6.74258C6.54912 2.29126 6.39258 2.4478 6.39258 2.64126Z"
+                            />
+                            <path
+                              d="M10.5999 6.15039H6.74062C6.54717 6.15039 6.39062 6.30693 6.39062 6.50039C6.39062 6.69385 6.54717 6.85039 6.74062 6.85039H10.5999C10.7933 6.85039 10.9499 6.69385 10.9499 6.50039C10.9499 6.30693 10.7933 6.15039 10.5999 6.15039Z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+
+                      <ul class="content-exchange-status">
+                        <li class="content-exchange-status__item _active">
+                          <i class="content-exchange-status__icon">
+                            <img src="./img/status/01.svg" loading="lazy" alt="1" />
+                          </i>
+
+                          <span class="content-exchange-status__text"> Ожидание депозита </span>
+                        </li>
+
+                        <li class="content-exchange-status__item">
+                          <i class="content-exchange-status__icon">
+                            <img src="./img/status/02.svg" loading="lazy" alt="2" />
+                          </i>
+
+                          <span class="content-exchange-status__text"> Подтверждение </span>
+                        </li>
+
+                        <li class="content-exchange-status__item">
+                          <i class="content-exchange-status__icon">
+                            <img src="./img/status/03.svg" loading="lazy" alt="3" />
+                          </i>
+
+                          <span class="content-exchange-status__text"> Обмен в процессе </span>
+                        </li>
+
+                        <li class="content-exchange-status__item">
+                          <i class="content-exchange-status__icon">
+                            <img src="./img/status/04.svg" loading="lazy" alt="4" />
+                          </i>
+
+                          <span class="content-exchange-status__text"> Отправка </span>
+                        </li>
+                      </ul>
+
+                      <div class="content-exchange-get">
+                        <div class="content-exchange-get__title">Детали заявки</div>
+
+                        <div class="content-exchange-get__field">
+                          <span class="content-exchange-get__placeholder"> Вы получите: </span>
+
+                          <div class="content-exchange-get__content">
+                            <i class="content-exchange-get__icon">
+                              <img src="./img/currency/tether.png" loading="lazy" alt="Tether" />
+                            </i>
+
+                            <span class="content-exchange-get__value"> 0.1560781 ETH </span>
+                          </div>
+                        </div>
+
+                        <span class="content-exchange-get__prompt"> С учетом комиссии платежной системы </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <aside class="content__sidebar">
@@ -297,6 +353,24 @@
             </div>
           </div>
         </div>
+
+        <!-- Оставь отзыв — получи 1.5 USDT.  -->
+        <section class="leave-feedback">
+  <div class="_container">
+    <div class="leave-feedback__body">
+      <div class="leave-feedback__content">
+        <h5 class="leave-feedback__title">Оставь отзыв — получи 1.5 USDT. </h5>
+
+        <a class="leave-feedback__link" href="#"> Для подробностей жми на меня </a>
+      </div>
+
+      <i class="leave-feedback__icon">
+        <img src="./img/icons/bitcoin-wallet.png" loading="lazy" alt="Bitcoin" />
+      </i>
+    </div>
+  </div>
+</section>
+
 
         <!-- Сотрудничаем с лучшими -->
         <div class="cooperate-with-best">
